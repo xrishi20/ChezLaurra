@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+.fStyle:focus {
+    @apply outline-none shadow-outline;
+}
+
+@tailwind utilities;
