@@ -1,0 +1,11 @@
+.sub-links a:last-child {
+    border: none !important;
+}
+
+.sub-links {
+    display: none;
+}
+
+.list-item:hover .sub-links {
+    display: flex;
+}

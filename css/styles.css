@@ -1,0 +1,14 @@
+.sub-links a:last-child {
+  border: none !important;
+}
+
+.sub-links {
+  display: none;
+}
+
+.list-item:hover .sub-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=styles.css.map */

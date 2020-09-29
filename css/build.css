@@ -6,4 +6,12 @@
     @apply outline-none shadow-outline;
 }
 
+.subLink {
+    @apply flex-shrink-0 w-full py-2 border-b border-dustyGray border-opacity-25;
+}
+
+.subLink:focus {
+    @apply outline-none shadow-outline;
+}
+
 @tailwind utilities;

@@ -619,6 +619,23 @@ video {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
+.subLink {
+  flex-shrink: 0;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom-width: 1px;
+  --border-opacity: 1;
+  border-color: #9C9494;
+  border-color: rgba(156, 148, 148, var(--border-opacity));
+  --border-opacity: 0.25;
+}
+
+.subLink:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
