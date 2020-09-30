@@ -29,6 +29,7 @@ main {
 }
 
 .square {
-  position: relative;
-  padding-top: 100%;
+  position: relative !important;
+  padding-top: 100% !important;
+  overflow: hidden !important;
 }
