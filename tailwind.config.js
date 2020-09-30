@@ -8,15 +8,15 @@ module.exports = {
     extend: {},
     colors: {
       linen: "#FBF3EB",
-      wattle: "#CADA4B",
-      chicago: "#616159",
-      dustyGray: "#9C9494",
-      black: "#000000",
-      white: "#FFFFFF",
+      red: "#DF3B57",
+      dBrown: "#483D3F",
+      purple: "#5E4AE3",
+      almond: "#f5d2af",
       transparent: "transparent",
     },
     fontFamily: {
-      esteban: '"Esteban", Georgia, Cambria, "Times New Roman", Times, serif',
+      dLibre:
+        '"David Libre", Georgia, Cambria, "Times New Roman", Times, serif',
     },
   },
   variants: {},
