@@ -47,13 +47,30 @@
       <section
         class="max-w-screen-xl mx-auto w-full flex justify-between items-center"
       >
-        <!-- Logo -->
-        <a
-          class="fStyle lg:mr-16 rounded-full flex-shrink-0 my-2"
-          href="./index.html"
-        >
-          <img class="h-12" src="./assets/images/logo.png" alt="Chez Laurra" />
-        </a>
+        <div class="flex items-center">
+          <!-- Menu Icon -->
+          <div class="flex-shrink-0 lg:hidden -ml-4">
+            <button
+              class="fStyle hamburger hamburger--elastic transform scale-75 origin-center"
+              type="button"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+          <!-- Logo -->
+          <a
+            class="fStyle lg:mr-16 rounded-full flex-shrink-0 my-2"
+            href="./index.html"
+          >
+            <img
+              class="h-12"
+              src="./assets/images/logo.png"
+              alt="Chez Laurra"
+            />
+          </a>
+        </div>
         <!-- Nav Links -->
         <ul class="hidden lg:flex items-center font-medium">
           <li class="mx-4">
@@ -90,6 +107,26 @@
         </button>
       </section>
     </nav>
+    <!-- Mobile Nav -->
+    <section
+      id="mNav"
+      class="fixed top-0 left-0 w-full transform translate-y-20 px-6 z-40 hidden"
+    >
+      <div
+        class="mNList w-full bg-linen rounded-lg shadow-lg py-2 px-6 flex flex-col text-center text-lg md:text-2xl font-medium"
+      >
+        <a class="mNListItem" href="#">Bucartarie Internationala</a>
+        <a class="mNListItem" href="#">Bucartarie Fracenza</a>
+        <a class="mNListItem" href="#">Brutarie</a>
+        <a class="mNListItem" href="#">Desertei</a>
+        <a class="mNListItem" href="#">Contact</a>
+      </div>
+    </section>
+    <!-- Dark BG -->
+    <div
+      id="darkBG"
+      class="fixed top-0 left-0 w-full h-screen bg-dBrown bg-opacity-50 z-30 hidden"
+    ></div>
     <header
       class="relative w-full bg-center bg-no-repeat bg-cover pt-32 pb-48 px-6 mb-6 z-0"
       style="background-image: url(./assets/images/bg.jpg)"
@@ -347,11 +384,15 @@
               <div class="swiper-wrapper">
                 <div
                   class="swiper-slide"
-                  style="background-image: url(./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg)"
+                  style="
+                    background-image: url(./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg);
+                  "
                 ></div>
                 <div
                   class="swiper-slide"
-                  style="background-image: url(./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg)"
+                  style="
+                    background-image: url(./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg);
+                  "
                 ></div>
                 <div
                   class="swiper-slide"
@@ -368,11 +409,15 @@
               <div class="swiper-wrapper">
                 <div
                   class="swiper-slide"
-                  style="background-image: url(./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg)"
+                  style="
+                    background-image: url(./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg);
+                  "
                 ></div>
                 <div
                   class="swiper-slide"
-                  style="background-image: url(./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg)"
+                  style="
+                    background-image: url(./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg);
+                  "
                 ></div>
                 <div
                   class="swiper-slide"
@@ -393,7 +438,18 @@
               Our Awesome Book
             </h2>
             <p class="w-full text-base md:text-xl italic mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam possimus libero nulla fugit accusamus voluptatibus unde repellat, eum voluptates excepturi magnam asperiores neque, accusantium praesentium adipisci odit non, amet sed aspernatur ducimus eveniet soluta. Excepturi, vitae! Doloribus, repellat accusamus! Laborum quos repellendus minima, quibusdam tempora ullam eos et ad nisi. Vel placeat, odit eveniet modi nam aut ipsum magni recusandae molestias. Ut modi laborum, ab numquam architecto distinctio reiciendis nihil quibusdam totam quisquam mollitia ea labore? Maxime, enim? Eum esse in possimus laborum, eveniet ipsa eius saepe repudiandae aperiam nobis iste neque officia molestias eaque obcaecati ullam dolore nam quo!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              possimus libero nulla fugit accusamus voluptatibus unde repellat,
+              eum voluptates excepturi magnam asperiores neque, accusantium
+              praesentium adipisci odit non, amet sed aspernatur ducimus eveniet
+              soluta. Excepturi, vitae! Doloribus, repellat accusamus! Laborum
+              quos repellendus minima, quibusdam tempora ullam eos et ad nisi.
+              Vel placeat, odit eveniet modi nam aut ipsum magni recusandae
+              molestias. Ut modi laborum, ab numquam architecto distinctio
+              reiciendis nihil quibusdam totam quisquam mollitia ea labore?
+              Maxime, enim? Eum esse in possimus laborum, eveniet ipsa eius
+              saepe repudiandae aperiam nobis iste neque officia molestias eaque
+              obcaecati ullam dolore nam quo!
             </p>
             <a
               class="fStyle bg-red text-linen py-2 px-4 rounded-full font-bold"
@@ -560,6 +616,18 @@
         thumbs: {
           swiper: galleryThumbs,
         },
+      });
+      // Hamburger Menu
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        document.querySelector("#mNav").classList.toggle("hidden");
+        document.querySelector("#darkBG").classList.toggle("hidden");
+      });
+      document.querySelector("#darkBG").addEventListener("click", () => {
+        hamburger.classList.remove("is-active");
+        document.querySelector("#mNav").classList.add("hidden");
+        document.querySelector("#darkBG").classList.add("hidden");
       });
     </script>
   </body>

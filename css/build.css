@@ -22,4 +22,12 @@
     @apply outline-none shadow-outline;
 }
 
+.mNListItem {
+    @apply py-2 px-4 w-full border-b border-dBrown border-opacity-25;
+}
+
+.mNListItem:focus {
+    @apply outline-none shadow-outline;
+}
+
 @tailwind utilities;
