@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/tailwind.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
@@ -337,29 +341,62 @@
         <article
           class="max-w-6xl w-full mx-auto px-6 md:px-12 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12"
         >
-          <!-- Book's Image -->
-          <img
-            class="w-full rounded-lg shadow-lg"
-            src="./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg"
-            alt="Book"
-          />
+          <!-- Book's Images -->
+          <div class="flex flex-col">
+            <div class="swiper-container gallery-top rounded-lg shadow-lg mb-2">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./assets/images/IMG_0345.jpg)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./assets/images/IMG_0510.jpg)"
+                ></div>
+              </div>
+            </div>
+            <!-- Thumbnails -->
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./assets/images/IMG_0345.jpg)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./assets/images/IMG_0510.jpg)"
+                ></div>
+              </div>
+            </div>
+          </div>
           <!-- Info -->
           <aside
-            class="w-full lg:col-span-2 md:py-6 flex flex-col items-start lg:px-12"
+            class="w-full lg:col-span-2 md:py-3 flex flex-col items-start lg:px-12"
           >
             <h2 class="w-full text-2xl md:text-4xl font-bold">
               Our Awesome Book
             </h2>
             <p class="w-full text-base md:text-xl italic mb-6">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-              adipisci ducimus dicta quas laborum ex ad optio aut error nobis
-              quo a consectetur totam explicabo voluptates, rerum laboriosam.
-              Vel, repellat. Nam, ut modi maiores inventore quo quasi optio
-              provident, nisi eius cupiditate sed maxime esse nostrum quia
-              magnam eum ab!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam possimus libero nulla fugit accusamus voluptatibus unde repellat, eum voluptates excepturi magnam asperiores neque, accusantium praesentium adipisci odit non, amet sed aspernatur ducimus eveniet soluta. Excepturi, vitae! Doloribus, repellat accusamus! Laborum quos repellendus minima, quibusdam tempora ullam eos et ad nisi. Vel placeat, odit eveniet modi nam aut ipsum magni recusandae molestias. Ut modi laborum, ab numquam architecto distinctio reiciendis nihil quibusdam totam quisquam mollitia ea labore? Maxime, enim? Eum esse in possimus laborum, eveniet ipsa eius saepe repudiandae aperiam nobis iste neque officia molestias eaque obcaecati ullam dolore nam quo!
             </p>
             <a
-              class="bg-red text-linen py-2 px-4 rounded-full font-bold"
+              class="fStyle bg-red text-linen py-2 px-4 rounded-full font-bold"
               href="#"
               >Buy Now</a
             >
@@ -508,5 +545,22 @@
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var galleryThumbs = new Swiper(".gallery-thumbs", {
+        spaceBetween: 4,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var galleryTop = new Swiper(".gallery-top", {
+        spaceBetween: 4,
+        thumbs: {
+          swiper: galleryThumbs,
+        },
+      });
+    </script>
   </body>
 </html>
