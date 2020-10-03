@@ -203,4 +203,12 @@ main {
 .mNListItem:last-child {
   border: none !important;
 }
+
+#emailCheck ~ svg {
+  opacity: 0 !important;
+}
+
+#emailCheck:checked ~ svg {
+  opacity: 1 !important;
+}
 /*# sourceMappingURL=styles.css.map */

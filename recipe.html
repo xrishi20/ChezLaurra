@@ -146,7 +146,9 @@
           Simple Oatmeal Pancakes
         </h1>
         <!-- Decoration -->
-        <div class="max-w-xs md:w-full mx-auto px-12 flex justify-around z-10 mb-6">
+        <div
+          class="max-w-xs md:w-full mx-auto px-12 flex justify-around z-10 mb-6"
+        >
           <div class="h-1 w-1 bg-dBrown rounded-full"></div>
           <div class="h-1 w-3 bg-dBrown rounded-full ml-2"></div>
           <div class="h-1 flex-1 bg-dBrown rounded-full mx-2"></div>
@@ -154,13 +156,22 @@
           <div class="h-1 w-1 bg-dBrown rounded-full"></div>
         </div>
         <!-- Info -->
-        <p class="font-medium max-w-4xl w-full mx-auto text-center text-sm md:text-lg">
-          This tart is one of my favorite desserts from childhood and the one my mother pampers me with most often during the summer. After several attempts at various recipes and modulating the ingredients, I came to the recipe below, which is neither 100% clafoutis (because it does not contain milk), nor pandispan (because the top is much thinner). At the same time the countertop is fluffier and more airy than that of a clafoutis, but not as tall as that of the pandispan… in the end I think I could call it "clafouprajiturique"? Is it too French?🙂
+        <p
+          class="font-medium max-w-4xl w-full mx-auto text-center text-sm md:text-lg"
+        >
+          This tart is one of my favorite desserts from childhood and the one my
+          mother pampers me with most often during the summer. After several
+          attempts at various recipes and modulating the ingredients, I came to
+          the recipe below, which is neither 100% clafoutis (because it does not
+          contain milk), nor pandispan (because the top is much thinner). At the
+          same time the countertop is fluffier and more airy than that of a
+          clafoutis, but not as tall as that of the pandispan… in the end I
+          think I could call it "clafouprajiturique"? Is it too French?🙂
         </p>
       </section>
       <!-- Ingredients/Procedure/SideBar -->
       <section
-        class="max-w-screen-xl w-full mx-auto px-6 md:px-12 mb-12 grid grid-cols-1 lg:grid-cols-3 gap-12"
+        class="max-w-screen-xl w-full mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16"
       >
         <!-- Side Bar -->
         <div class="flex flex-col trigger">
@@ -175,7 +186,7 @@
                 Basic Info
               </h6>
               <ul
-                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-1 xl:grid-cols-2 gap-2 w-full mb-6 text-sm md:text-lg"
+                class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-2 w-full mb-6 text-sm md:text-lg"
               >
                 <li class="w-full flex flex-col">
                   <span class="font-bold">Yield</span>
@@ -194,12 +205,7 @@
                   <span>20 min.</span>
                 </li>
               </ul>
-              <a
-                class="pButton"
-                href="#"
-              >
-                Download Recipe
-              </a>
+              <a class="pButton" href="#"> Download Recipe </a>
             </div>
             <!-- Share -->
             <div
@@ -333,13 +339,200 @@
       </section>
       <!-- Showcase/Comments -->
       <section
-        class="max-w-screen-xl w-full mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-3 gap-12"
+        class="max-w-screen-xl w-full mx-auto px-6 md:px-12 mb-24 lg:mb-32"
       >
-        <!-- Comments -->
-        <article class="w-full flex flex-col">
-          <h6 class="text-xl md:text-3xl font-bold leading-none mb-4 w-full">
+        <!-- Showcase -->
+        <article class="w-full flex flex-col mb-16">
+          <h6 class="text-xl md:text-3xl font-bold leading-none mb-6 w-full">
             Bon appetit!
           </h6>
+          <!-- Image Gallery -->
+        <article
+          class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12"
+        >
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/IMG_7034-2.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/IMG_8906.jpg"
+              alt="food"
+            />
+          </div>
+          </div>
+        </article>
+        </article>
+        <!-- Comments -->
+        <article class="w-full flex flex-col">
+          <h6 class="text-xl md:text-3xl font-bold leading-none mb-6 w-full">
+            Comments
+          </h6>
+          <form class="w-full grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-6 bg-almond rounded-lg shadow-lg p-6 lg:px-8" action="">
+            <!-- Name -->
+            <div class="flex flex-col">
+              <label class="text-sm font-medium mb-1" for="Name">Name</label>
+              <input class="w-full fStyle py-3 px-6 shadow-md rounded-lg bg-linen" type="text" name="Name" id="Name" placeholder="John Doe" required>
+            </div>
+            <!-- Email -->
+            <div class="flex flex-col">
+              <label class="text-sm font-medium mb-1" for="Email">Email</label>
+              <input class="w-full fStyle py-3 px-6 shadow-md rounded-lg bg-linen" type="email" name="Email" id="Email" placeholder="example@email.com" required>
+            </div>
+            <!-- Comment -->
+            <div class="flex flex-col md:col-span-2">
+              <label class="text-sm font-medium mb-1" for="commentArea">Your Comment</label>
+              <textarea class="w-full fStyle py-3 px-6 shadow-md rounded-lg bg-linen" name="commentArea" id="commentArea" cols="30" rows="5" placeholder="Your opinion on the recipe..." required></textarea>
+            </div>
+
+            <div class="md:col-span-2 flex flex-col md:flex-row md:items-center md:justify-between">
+              <!-- Checkbox -->
+              <div class="flex items-center mb-6 md:mb-0">
+                <div
+                  class="relative h-4 w-4 mr-2 border-2 border-dBrown rounded flex justify-center items-center cursor-pointer"
+                >
+                  <input
+                    id="emailCheck"
+                    class="absolute top-0 left-0 w-full h-full appearance-none rounded cursor-pointer fStyle z-10"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="h-3 w-3 text-dBrown pointer-events-none cursor-pointer"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13L9 17L19 7"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <p class="text-lg font-medium">Show your email in comments?</p>
+              </div>
+              <!-- Post Comment -->
+              <div class="flex md:mt-2">
+                <input class="pButton cursor-pointer" type="submit" value="Post Comment">
+              </div>
+            </div>
+
+          </form>
+        </article>
+      </section>
+      <!-- Instagram -->
+      <section
+        class="max-w-screen-xl w-full mx-auto px-6 md:px-12 flex flex-col items-center"
+      >
+        <h1
+          class="text-3xl md:text-5xl font-bold text-center leading-none mb-3 z-10"
+        >
+          Our Instagram
+        </h1>
+        <!-- Decoration -->
+        <div
+          class="max-w-xs w-full mx-auto px-12 flex justify-around mb-12 z-10"
+        >
+          <div class="h-1 w-1 bg-dBrown rounded-full"></div>
+          <div class="h-1 w-3 bg-dBrown rounded-full ml-2"></div>
+          <div class="h-1 flex-1 bg-dBrown rounded-full mx-2"></div>
+          <div class="h-1 w-3 bg-dBrown rounded-full mr-2"></div>
+          <div class="h-1 w-1 bg-dBrown rounded-full"></div>
+        </div>
+        <!-- Image Gallery -->
+        <article
+          class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12"
+        >
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/IMG_7034-2.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/IMG_8906.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/IMG_9899.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/IMG_0345.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/IMG_0510.jpg"
+              alt="food"
+            />
+          </div>
+          <!-- Image -->
+          <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center absolute top-0 left-0"
+              src="./assets/images/IMG_0618.jpg"
+              alt="food"
+            />
+          </div>
         </article>
       </section>
     </main>
@@ -419,26 +612,13 @@
             trigger: ".trigger",
             pin: ".pin",
             start: "top 120px",
-            end: "bottom 700px",
+            end: "bottom 595px",
           });
         }
       }
       let x = window.matchMedia("(min-width: 1024px)");
       gsapPinLG(x); // Call listener function at run time
       x.addListener(gsapPinLG); // Attach listener function on state changes
-      function gsapPinXL() {
-        if (y.matches) {
-          let st = ScrollTrigger.create({
-            trigger: ".trigger",
-            pin: ".pin",
-            start: "top 120px",
-            end: "bottom 580px",
-          });
-        }
-      }
-      let y = window.matchMedia("(min-width: 1280px)");
-      gsapPinXL(y); // Call listener function at run time
-      y.addListener(gsapPinXL); // Attach listener function on state changes
     </script>
   </body>
 </html>

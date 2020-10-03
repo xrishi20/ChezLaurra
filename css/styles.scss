@@ -167,3 +167,13 @@ main {
 .mNListItem:last-child {
   border: none !important;
 }
+
+//Check
+
+#emailCheck ~ svg {
+  opacity: 0 !important;
+}
+
+#emailCheck:checked ~ svg {
+  opacity: 1 !important;
+}
