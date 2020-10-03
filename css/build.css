@@ -30,4 +30,12 @@
     @apply outline-none shadow-outline;
 }
 
+.pButton {
+    @apply bg-red text-linen py-2 px-4 rounded-full font-bold inline-block;
+}
+
+.pButton:focus {
+    @apply outline-none shadow-outline;
+}
+
 @tailwind utilities;
