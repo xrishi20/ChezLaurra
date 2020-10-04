@@ -38,4 +38,20 @@
     @apply outline-none shadow-outline;
 }
 
+.sImgBox {
+    @apply w-full rounded-lg shadow-md overflow-hidden flex-shrink-0;
+}
+
+.sImg {
+    @apply w-full h-full object-cover object-center absolute top-0 left-0;
+}
+
+.btnImgBox {
+    @apply w-full rounded-lg shadow-md overflow-hidden;
+}
+
+.btnImgBox:focus {
+    @apply outline-none shadow-outline;
+}
+
 @tailwind utilities;

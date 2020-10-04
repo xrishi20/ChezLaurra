@@ -36,7 +36,7 @@ main {
   background: #df3b57;
 }
 
-.square {
+.square, .btnImgBox, .sImgBox {
   position: relative !important;
   padding-top: 100% !important;
   overflow: hidden !important;
