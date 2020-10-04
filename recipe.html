@@ -186,7 +186,7 @@
                 Basic Info
               </h6>
               <ul
-                class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-2 w-full mb-6 text-sm md:text-lg"
+                class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-2 w-full mb-6 text-base md:text-xl"
               >
                 <li class="w-full flex flex-col">
                   <span class="font-bold">Yield</span>
@@ -348,37 +348,21 @@
           </h6>
           <!-- Image Gallery -->
           <article
-            class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-12"
+            class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12"
           >
             <!-- Image -->
-            <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <div class="w-full rect rounded-lg shadow-md overflow-hidden">
               <img
                 class="w-full h-full object-cover object-center absolute top-0 left-0"
-                src="./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg"
+                src="./assets/images/le-buzz-jlNtfHi8oiI-unsplash.jpg"
                 alt="food"
               />
             </div>
             <!-- Image -->
-            <div class="w-full square rounded-lg shadow-md overflow-hidden">
+            <div class="w-full rect rounded-lg shadow-md overflow-hidden">
               <img
                 class="w-full h-full object-cover object-center absolute top-0 left-0"
-                src="./assets/images/90901280_10217117937569191_6468587349004517376_n.jpg"
-                alt="food"
-              />
-            </div>
-            <!-- Image -->
-            <div class="w-full square rounded-lg shadow-md overflow-hidden">
-              <img
-                class="w-full h-full object-cover object-center absolute top-0 left-0"
-                src="./assets/images/IMG_7034-2.jpg"
-                alt="food"
-              />
-            </div>
-            <!-- Image -->
-            <div class="w-full square rounded-lg shadow-md overflow-hidden">
-              <img
-                class="w-full h-full object-cover object-center absolute top-0 left-0"
-                src="./assets/images/IMG_8906.jpg"
+                src="./assets/images/bg.jpg"
                 alt="food"
               />
             </div>
@@ -541,31 +525,30 @@
             Comments
           </h6>
           <form
-            class="w-full grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-6 bg-almond rounded-lg shadow-lg p-6 lg:px-8 mb-8"
+            class="w-full grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-6 bg-almond rounded-lg shadow-lg p-6 lg:px-8 mb-12"
             action=""
           >
-            <!-- Name -->
+            <!-- First Name -->
             <div class="flex flex-col">
-              <label class="text-sm font-medium mb-1" for="Name">Name</label>
+              <label class="text-sm font-medium mb-1" for="fName">First Name</label>
               <input
                 class="w-full fStyle py-3 px-6 shadow-md rounded-lg bg-linen"
                 type="text"
-                name="Name"
-                id="Name"
-                placeholder="John Doe"
+                name="fName"
+                id="fName"
+                placeholder="John"
                 required
               />
             </div>
-            <!-- Email -->
+            <!-- Last Name -->
             <div class="flex flex-col">
-              <label class="text-sm font-medium mb-1" for="Email">Email</label>
+              <label class="text-sm font-medium mb-1" for="lName">Last Name</label>
               <input
                 class="w-full fStyle py-3 px-6 shadow-md rounded-lg bg-linen"
-                type="email"
-                name="Email"
-                id="Email"
-                placeholder="example@email.com"
-                required
+                type="text"
+                name="lName"
+                id="lName"
+                placeholder="Doe"
               />
             </div>
             <!-- Comment -->
@@ -585,37 +568,8 @@
             </div>
 
             <div
-              class="md:col-span-2 flex flex-col md:flex-row md:items-center md:justify-between"
+              class="md:col-span-2 flex justify-end"
             >
-              <!-- Checkbox -->
-              <div class="flex items-center mb-6 md:mb-0">
-                <div
-                  class="relative h-4 w-4 mr-2 border-2 border-dBrown rounded flex justify-center items-center cursor-pointer"
-                >
-                  <input
-                    id="emailCheck"
-                    class="absolute top-0 left-0 w-full h-full appearance-none rounded cursor-pointer fStyle z-10"
-                    type="checkbox"
-                  />
-                  <svg
-                    class="h-3 w-3 text-dBrown pointer-events-none cursor-pointer"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5 13L9 17L19 7"
-                      stroke="currentColor"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <p class="text-lg font-medium">Show your email in comments?</p>
-              </div>
               <!-- Post Comment -->
               <div class="flex md:mt-2">
                 <input
@@ -1001,7 +955,7 @@
             trigger: ".trigger",
             pin: ".pin",
             start: "top 120px",
-            end: "bottom 595px",
+            end: "bottom 605px",
           });
         }
       }
