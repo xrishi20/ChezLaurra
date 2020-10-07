@@ -37,7 +37,7 @@
     />
     <title>Chez Laurra</title>
   </head>
-  <body class="bg-linen font-dLibre text-dBrown pt-16">
+  <body class="bg-linen font-dLibre text-dBrown">
     <nav
       class="fixed top-0 left-0 w-full flex flex-col bg-linen mb-8 z-50 shadow-lg"
     >
@@ -139,7 +139,9 @@
 
     <header
       class="relative w-full bg-center bg-no-repeat bg-cover py-32 lg:py-56 px-6 mb-12 z-0"
-      style="background-image: url(./assets/images/contact.jpg)"
+      style="
+        background-image: url(./assets/images/rachel-park-hrlvr2ZlUNk-unsplash.jpg);
+      "
     >
       <!-- Blur Effect -->
       <div
@@ -148,16 +150,16 @@
     </header>
 
     <main class="w-full">
-      <!-- Name & Info -->
       <section class="max-w-screen-xl w-full mx-auto px-6 md:px-12 mb-24 lg:mb-32">
+        <!-- Name -->
         <h1
           class="text-3xl md:text-5xl font-bold text-center leading-none mb-3 z-10"
         >
-          Bonjour si bine ai venit Chez Laurra!
+          Bucartarie Internationala
         </h1>
         <!-- Decoration -->
         <div
-          class="max-w-xs md:w-full mx-auto px-12 flex justify-around z-10 mb-6"
+          class="max-w-xs md:w-full mx-auto px-12 flex justify-around z-10 mb-12"
         >
           <div class="h-1 w-1 bg-dBrown rounded-full"></div>
           <div class="h-1 w-3 bg-dBrown rounded-full ml-2"></div>
@@ -165,89 +167,179 @@
           <div class="h-1 w-3 bg-dBrown rounded-full mr-2"></div>
           <div class="h-1 w-1 bg-dBrown rounded-full"></div>
         </div>
-        <!-- Info -->
-        <p
-          class="font-medium max-w-4xl w-full mx-auto text-center text-sm md:text-lg"
+        <!-- Recipes -->
+        <div
+          class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12"
         >
-          Eu sunt Laura si locuiesc in Franta. Pe langa gatit, imi place sa
-          organizez si sa decorez bucatarii. Descurajez food waste-ul (risipa de
-          mancare) si sustin conceptele de reciclare si economie circulara. La
-          Chez Laurra vei gasi retete predominant vegetariene. Gatesc in
-          principal retete inspirate din bucataria franceza, italiana, indiana,
-          romaneasca, englezeasca, insa sunt deschisa la a incerca feluri de
-          mancare din toate bucatariile. Cu cat mai diverse aromele si cu cat
-          mai multe culori in farfurie, cu atat mai bine ! Inspiratia mi-o
-          gasesc in carti de gatit sau carti al caror autor sunt diversi chefi
-          (Jamie Oliver, Gordon Ramsay, Ottolenghi, Luana Belmondo etc.),
-          reviste (Cuisine Actuelle, Saveur), conturi de Instagram, de Youtube,
-          cat si site-uri specializate (BBC Good Food in principal).
-        </p>
-      </section>
-      <!-- Email me! -->
-      <section class="max-w-screen-xl w-full mx-auto px-6 md:px-12 mb-24 lg:mb-32">
-        <article class="w-full flex flex-col">
-          <h6 class="text-xl md:text-3xl font-bold leading-none mb-6 w-full">
-            Email me
-            <a href="mailto:chezzlaura@gmail.com" class="text-xs"
-              >(chezzlaura@gmail.com)</a
-            >
-          </h6>
-          <form
-            class="w-full grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-6 bg-almond rounded-lg shadow-lg p-6 lg:px-8"
-            action=""
-          >
+          <!-- Card -->
+          <div class="flex flex-col items-center">
+            <div class="sImgBox">
+              <img
+                class="sImg"
+                src="./assets/images/le-buzz-jlNtfHi8oiI-unsplash.jpg"
+                alt="food"
+              />
+            </div>
             <!-- Name -->
-            <div class="flex flex-col">
-              <label class="text-sm font-medium mb-1" for="Name">Name</label>
-              <input
-                class="w-full fStyle py-3 px-6 shadow-md rounded-lg bg-linen"
-                type="text"
-                name="Name"
-                id="Name"
-                placeholder="John Doe"
-                required
-              />
-            </div>
-            <!-- Email -->
-            <div class="flex flex-col">
-              <label class="text-sm font-medium mb-1" for="email">Email</label>
-              <input
-                class="w-full fStyle py-3 px-6 shadow-md rounded-lg bg-linen"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="example@email.com"
-                required
-              />
-            </div>
-            <!-- Query -->
-            <div class="flex flex-col md:col-span-2">
-              <label class="text-sm font-medium mb-1" for="query"
-                >Your Query</label
+            <a href="./recipe.html" class="cardLink">
+              <h3 class="flex-1 truncate">Looks Non-Veg hue hue hehe</h3>
+              <svg
+                class="h-5 w-5 ml-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-              <textarea
-                class="w-full fStyle py-3 px-6 shadow-md rounded-lg bg-linen"
-                name="query"
-                id="query"
-                cols="30"
-                rows="5"
-                placeholder="I wanted to talk about..."
-                required
-              ></textarea>
-            </div>
-
-            <div class="md:col-span-2 flex justify-end">
-              <!-- Send -->
-              <div class="flex md:mt-2">
-                <input
-                  class="pButton cursor-pointer"
-                  type="submit"
-                  value="Submit"
+                <path
+                  d="M10 6H6C5.46957 6 4.96086 6.21071 4.58579 6.58579C4.21071 6.96086 4 7.46957 4 8V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V14M14 4H20M20 4V10M20 4L10 14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
-              </div>
+              </svg>
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="flex flex-col items-center">
+            <div class="sImgBox">
+              <img class="sImg" src="./assets/images/bg.jpg" alt="food" />
             </div>
-          </form>
-        </article>
+            <!-- Name -->
+            <a href="./recipe.html" class="cardLink">
+              <h3 class="flex-1 truncate">Looks Non-Veg hue hue hehe</h3>
+              <svg
+                class="h-5 w-5 ml-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 6H6C5.46957 6 4.96086 6.21071 4.58579 6.58579C4.21071 6.96086 4 7.46957 4 8V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V14M14 4H20M20 4V10M20 4L10 14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="flex flex-col items-center">
+            <div class="sImgBox">
+              <img
+                class="sImg"
+                src="./assets/images/IMG_7034-2.jpg"
+                alt="food"
+              />
+            </div>
+            <!-- Name -->
+            <a href="./recipe.html" class="cardLink">
+              <h3 class="flex-1 truncate">Looks Non-Veg hue hue hehe</h3>
+              <svg
+                class="h-5 w-5 ml-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 6H6C5.46957 6 4.96086 6.21071 4.58579 6.58579C4.21071 6.96086 4 7.46957 4 8V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V14M14 4H20M20 4V10M20 4L10 14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="flex flex-col items-center">
+            <div class="sImgBox">
+              <img class="sImg" src="./assets/images/IMG_8906.jpg" alt="food" />
+            </div>
+            <!-- Name -->
+            <a href="./recipe.html" class="cardLink">
+              <h3 class="flex-1 truncate">Looks Non-Veg hue hue hehe</h3>
+              <svg
+                class="h-5 w-5 ml-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 6H6C5.46957 6 4.96086 6.21071 4.58579 6.58579C4.21071 6.96086 4 7.46957 4 8V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V14M14 4H20M20 4V10M20 4L10 14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="flex flex-col items-center">
+            <div class="sImgBox">
+              <img class="sImg" src="./assets/images/IMG_9899.jpg" alt="food" />
+            </div>
+            <!-- Name -->
+            <a href="./recipe.html" class="cardLink">
+              <h3 class="flex-1 truncate">Looks Non-Veg hue hue hehe</h3>
+              <svg
+                class="h-5 w-5 ml-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 6H6C5.46957 6 4.96086 6.21071 4.58579 6.58579C4.21071 6.96086 4 7.46957 4 8V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V14M14 4H20M20 4V10M20 4L10 14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Card -->
+          <div class="flex flex-col items-center">
+            <div class="sImgBox">
+              <img
+                class="sImg"
+                src="./assets/images/E28145D0-51B6-4A93-BD4E-F514ADCD604F.jpg"
+                alt="food"
+              />
+            </div>
+            <!-- Name -->
+            <a href="./recipe.html" class="cardLink">
+              <h3 class="flex-1 truncate">Looks Non-Veg hue hue hehe</h3>
+              <svg
+                class="h-5 w-5 ml-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 6H6C5.46957 6 4.96086 6.21071 4.58579 6.58579C4.21071 6.96086 4 7.46957 4 8V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H16C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18V14M14 4H20M20 4V10M20 4L10 14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
     <!-- Footer -->
@@ -301,6 +393,7 @@
         </p>
       </div>
     </footer>
+
     <script>
       // Hamburger Menu
       var hamburger = document.querySelector(".hamburger");
