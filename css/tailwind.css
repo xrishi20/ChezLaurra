@@ -715,6 +715,38 @@ video {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
+.pageBtnSelected {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 9999px;
+  --bg-opacity: 1;
+  background-color: #DF3B57;
+  background-color: rgba(223, 59, 87, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #FBF3EB;
+  color: rgba(251, 243, 235, var(--text-opacity));
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.pageBtnSelected:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.pageBtn {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 9999px;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.pageBtn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
 .bg-linen {
   --bg-opacity: 1;
   background-color: #FBF3EB;
@@ -798,6 +830,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {

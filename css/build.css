@@ -54,4 +54,20 @@
     @apply outline-none shadow-outline;
 }
 
+.pageBtnSelected {
+    @apply h-6 w-6 rounded-full bg-red text-linen mx-2;
+}
+
+.pageBtnSelected:focus {
+    @apply outline-none shadow-outline;
+}
+
+.pageBtn {
+    @apply h-6 w-6 rounded-full mx-1;
+}
+
+.pageBtn:focus {
+    @apply outline-none shadow-outline;
+}
+
 @tailwind utilities;

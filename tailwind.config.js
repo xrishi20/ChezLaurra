@@ -32,4 +32,3 @@ module.exports = {
   variants: {},
   plugins: [],
 };
-// npx tailwindcss build css/build.css -o css/tailwind.css
