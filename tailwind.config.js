@@ -17,7 +17,6 @@ module.exports = {
     extend: {},
     colors: {
       linen: "#FBF3EB",
-      red: "#DF3B57",
       dBrown: "#483D3F",
       purple: "#5E4AE3",
       almond: "#f5d2af",

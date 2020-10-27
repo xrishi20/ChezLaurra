@@ -619,11 +619,8 @@ video {
 .cardLink {
   width: 83.333333%;
   --bg-opacity: 1;
-  background-color: #DF3B57;
-  background-color: rgba(223, 59, 87, var(--bg-opacity));
-  --text-opacity: 1;
-  color: #FBF3EB;
-  color: rgba(251, 243, 235, var(--text-opacity));
+  background-color: #CADA4B;
+  background-color: rgba(202, 218, 75, var(--bg-opacity));
   border-radius: 9999px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   padding-top: 0.5rem;
@@ -664,11 +661,8 @@ video {
 
 .pButton {
   --bg-opacity: 1;
-  background-color: #DF3B57;
-  background-color: rgba(223, 59, 87, var(--bg-opacity));
-  --text-opacity: 1;
-  color: #FBF3EB;
-  color: rgba(251, 243, 235, var(--text-opacity));
+  background-color: #CADA4B;
+  background-color: rgba(202, 218, 75, var(--bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -681,6 +675,14 @@ video {
 .pButton:focus {
   outline: 0;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.longImg {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .sImgBox {
@@ -720,11 +722,8 @@ video {
   width: 1.5rem;
   border-radius: 9999px;
   --bg-opacity: 1;
-  background-color: #DF3B57;
-  background-color: rgba(223, 59, 87, var(--bg-opacity));
-  --text-opacity: 1;
-  color: #FBF3EB;
-  color: rgba(251, 243, 235, var(--text-opacity));
+  background-color: #CADA4B;
+  background-color: rgba(202, 218, 75, var(--bg-opacity));
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -1209,12 +1208,6 @@ video {
   color: rgba(251, 243, 235, var(--text-opacity));
 }
 
-.text-red {
-  --text-opacity: 1;
-  color: #DF3B57;
-  color: rgba(223, 59, 87, var(--text-opacity));
-}
-
 .text-dBrown {
   --text-opacity: 1;
   color: #483D3F;
@@ -1225,6 +1218,12 @@ video {
   --text-opacity: 1;
   color: #f5d2af;
   color: rgba(245, 210, 175, var(--text-opacity));
+}
+
+.text-wattle {
+  --text-opacity: 1;
+  color: #CADA4B;
+  color: rgba(202, 218, 75, var(--text-opacity));
 }
 
 .italic {
