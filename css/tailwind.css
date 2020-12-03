@@ -619,8 +619,11 @@ video {
 .cardLink {
   width: 83.333333%;
   --bg-opacity: 1;
-  background-color: #CADA4B;
-  background-color: rgba(202, 218, 75, var(--bg-opacity));
+  background-color: #DF3B57;
+  background-color: rgba(223, 59, 87, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #FBF3EB;
+  color: rgba(251, 243, 235, var(--text-opacity));
   border-radius: 9999px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   padding-top: 0.5rem;
@@ -661,8 +664,11 @@ video {
 
 .pButton {
   --bg-opacity: 1;
-  background-color: #CADA4B;
-  background-color: rgba(202, 218, 75, var(--bg-opacity));
+  background-color: #DF3B57;
+  background-color: rgba(223, 59, 87, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #FBF3EB;
+  color: rgba(251, 243, 235, var(--text-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -722,8 +728,11 @@ video {
   width: 1.5rem;
   border-radius: 9999px;
   --bg-opacity: 1;
-  background-color: #CADA4B;
-  background-color: rgba(202, 218, 75, var(--bg-opacity));
+  background-color: #DF3B57;
+  background-color: rgba(223, 59, 87, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #FBF3EB;
+  color: rgba(251, 243, 235, var(--text-opacity));
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -764,10 +773,10 @@ video {
   background-color: rgba(245, 210, 175, var(--bg-opacity));
 }
 
-.bg-wattle {
+.bg-red {
   --bg-opacity: 1;
-  background-color: #CADA4B;
-  background-color: rgba(202, 218, 75, var(--bg-opacity));
+  background-color: #DF3B57;
+  background-color: rgba(223, 59, 87, var(--bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -1220,10 +1229,10 @@ video {
   color: rgba(245, 210, 175, var(--text-opacity));
 }
 
-.text-wattle {
+.text-red {
   --text-opacity: 1;
-  color: #CADA4B;
-  color: rgba(202, 218, 75, var(--text-opacity));
+  color: #DF3B57;
+  color: rgba(223, 59, 87, var(--text-opacity));
 }
 
 .italic {

@@ -20,7 +20,7 @@ module.exports = {
       dBrown: "#483D3F",
       purple: "#5E4AE3",
       almond: "#f5d2af",
-      wattle: "#CADA4B",
+      red: "#DF3B57",
       transparent: "transparent",
     },
     fontFamily: {
